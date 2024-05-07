@@ -13,7 +13,7 @@ please run the helm command inside the txt file
 kubectl apply -f service.yaml
 kubectl apply -f secret.yaml"
 3. make sure the pod is up using the command "kubectl get pods " these pods are in the default namespace
-4. in order to access the pod using the command "kubectl port-forward my-pod 3000:3000 (you can use any other port for the remote port)
-5. now you should be able to access the app and use it - ttry this url : http://localhost:3000/weather/haifa
+4. in order to access the app using the command "kubectl port-forward my-pod 3000:3000 (you can use any other port for the remote port)
+5. now you should be able to access the app and use it - try this url : http://localhost:3000/weather/haifa
 
 my docker hub for images : https://hub.docker.com/r/noamika8/noam
