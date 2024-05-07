@@ -1,12 +1,17 @@
 {
   "name": "weather-app",
-  "type": "module",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
+    "@opentelemetry/tracing": "^1.0.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^1.0.0",
+    "@opentelemetry/resources": "^1.0.0",
+    "@opentelemetry/semantic-conventions": "^1.0.0",
+    "@opentelemetry/sdk-node": "^1.0.0",
+    "@opentelemetry/auto-instrumentations-node": "^1.0.0",
     "express": "^4.17.1",
     "node-fetch": "^3.0.0"
   }
