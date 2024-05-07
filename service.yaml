@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: noam-service
+  labels:
+    app: noam
+spec:
+  selector:
+    app: noam
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 3000

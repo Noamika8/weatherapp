@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: noam-deployment
+  labels:
+    app: noam
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: noam
+  template:
+    metadata:
+      labels:
+        app: noam
+    spec:
+      containers:
+      - name: noam
+        image: noamika8/noam:1.0.14
+        ports:
+        - containerPort: 3000
+        env:
+        - name: API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: api-key-secret
+              key: api-key
