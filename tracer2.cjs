@@ -13,7 +13,7 @@ const exporter = new OTLPTraceExporter({
 const provider = new BasicTracerProvider({
     resource: new Resource({
         [SemanticResourceAttributes.SERVICE_NAME]: "WeatherService",
-        [SemanticResourceAttributes.SERVICE_VERSION]: "1.0.0",  // Example version
+        [SemanticResourceAttributes.SERVICE_VERSION]: "1.0.14", 
     })
 });
 provider.addSpanProcessor(new SimpleSpanProcessor(new ConsoleSpanExporter()));
