@@ -1,10 +1,14 @@
-import './tracer.js';  // Ensure this is the very first line
-import express from 'express';
-import fetch from 'node-fetch';
+let fetch;
+(async () => {
+    const fetchModule = await import('node-fetch');
+    fetch = fetchModule.default;
+})();
+
+const express = require('express');
 const app = express();
 const port = 3000;
 
-const apiKey = process.env.API_KEY;  // Load your API key via 'API_KEY' environment variable
+const apiKey = process.env.API_KEY;
 const baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
 
 app.get('/weather/:city', async (req, res) => {
