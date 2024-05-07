@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y git
 # Clone the repository containing the application code
 RUN git clone https://github.com/Noamika8/weatherapp.git .
 
-# Explicitly install each npm package
+
 RUN npm install --save @opentelemetry/api \
     @opentelemetry/instrumentation \
     @opentelemetry/tracing \
