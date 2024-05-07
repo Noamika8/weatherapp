@@ -5,6 +5,7 @@ I will guide you through to the most simple installation possible for this amazi
 
 Prereq -
 please have a kubernetes cluster prepared ahead preferably  2 node cluster or more.
+please run the helm command inside the txt file 
 
 1. clone the wetherapp repository in to your local environment
 2. then you may execute the following commands from the directory where the files are located :
