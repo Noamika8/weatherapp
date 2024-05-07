@@ -3,7 +3,7 @@ Hey !!!
 
 I will guide you through to the most simple installation possible for this amazing weather app !
 
-Prereq -
+pre requisites :
 please have a kubernetes cluster prepared ahead preferably  2 node cluster or more.
 please run the helm command inside the txt file 
 
